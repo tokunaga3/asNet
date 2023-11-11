@@ -582,3 +582,146 @@ Build with Vite complete: /app/public/vite-dev
 Completed 200 OK in 6736ms (Views: 6735.0ms | ActiveRecord: 0.0ms | Allocations: 9006)
 
 
+Started GET "/vue/index" for 192.168.65.1 at 2023-11-11 17:52:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "career_workout_development" does not exist
+):
+  
+activerecord (6.1.7.6) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.6) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.6) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.6) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.6) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+vite_ruby (3.3.4) lib/vite_ruby/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (252.9ms)[0m  [1m[35mCREATE DATABASE "career_workout_development" ENCODING = 'unicode'[0m
+  [1m[35m (311.0ms)[0m  [1m[35mCREATE DATABASE "career_workout_test" ENCODING = 'unicode'[0m
+Started GET "/vue/index" for 192.168.65.1 at 2023-11-11 17:52:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by VueController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering vue/index.html.erb within layouts/application
+  Rendered vue/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 363)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 348d1ef1f79db0362ed5
+Version: webpack 4.47.0
+Time: 3224ms
+Built at: 11/11/2023 8:52:35 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a667804fa528362396ec.js   34.6 KiB  application  [emitted] [immutable]  application
+js/application-a667804fa528362396ec.js.map   36.7 KiB  application  [emitted] [dev]        application
+      js/hello_vue-a4f1299034c7ffdb67b8.js    482 KiB    hello_vue  [emitted] [immutable]  hello_vue
+  js/hello_vue-a4f1299034c7ffdb67b8.js.map    432 KiB    hello_vue  [emitted] [dev]        hello_vue
+                             manifest.json  689 bytes               [emitted]              
+Entrypoint application = js/application-a667804fa528362396ec.js js/application-a667804fa528362396ec.js.map
+Entrypoint hello_vue = js/hello_vue-a4f1299034c7ffdb67b8.js js/hello_vue-a4f1299034c7ffdb67b8.js.map
+[./app/javascript/app.vue] 883 bytes {hello_vue} [built]
+[./app/javascript/app.vue?vue&type=script&lang=ts] 334 bytes {hello_vue} [built]
+[./app/javascript/app.vue?vue&type=style&index=0&id=6fb8108a&scoped=true&lang=css] 345 bytes {hello_vue} [built]
+[./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true] 193 bytes {hello_vue} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 358 bytes {application} [built]
+[./app/javascript/packs/hello_vue.js] 1.78 KiB {hello_vue} [built]
+[./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/dist/index.js?!./app/javascript/app.vue?vue&type=script&lang=ts] ./node_modules/babel-loader/lib??ref--7-0!./node_modules/vue-loader/dist??ref--13-0!./app/javascript/app.vue?vue&type=script&lang=ts 209 bytes {hello_vue} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/dist/index.js?!./app/javascript/app.vue?vue&type=style&index=0&id=6fb8108a&scoped=true&lang=css] ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--2-2!./node_modules/vue-loader/dist??ref--13-0!./app/javascript/app.vue?vue&type=style&index=0&id=6fb8108a&scoped=true&lang=css 831 bytes {hello_vue} [built]
+[./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js?!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/dist/index.js?!./app/javascript/app.vue?vue&type=style&index=0&id=6fb8108a&scoped=true&lang=css] ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/src??ref--2-2!./node_modules/vue-loader/dist??ref--13-0!./app/javascript/app.vue?vue&type=style&index=0&id=6fb8108a&scoped=true&lang=css 755 bytes {hello_vue} [built]
+[./node_modules/vue-loader/dist/templateLoader.js?!./node_modules/vue-loader/dist/index.js?!./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true] ./node_modules/vue-loader/dist/templateLoader.js??ref--5!./node_modules/vue-loader/dist??ref--13-0!./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true 628 bytes {hello_vue} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {hello_vue} [built]
+    + 9 hidden modules
+
+ERROR in ./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true (./node_modules/vue-loader/dist/templateLoader.js??ref--5!./node_modules/vue-loader/dist??ref--13-0!./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true) 3:27
+Module parse failed: Unexpected token (3:27)
+File was processed with these loaders:
+ * ./node_modules/vue-loader/dist/templateLoader.js
+ * ./node_modules/vue-loader/dist/index.js
+You may need an additional loader to handle the result of these loaders.
+| import { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from "vue"
+| 
+> export function render(_ctx: any,_cache: any,$props: any,$setup: any,$data: any,$options: any) {
+|   return (_openBlock(), _createElementBlock("p", null, _toDisplayString(_ctx.state.message), 1 /* TEXT */))
+| }
+ @ ./app/javascript/app.vue?vue&type=template&id=6fb8108a&scoped=true&ts=true 1:0-193 1:0-193
+ @ ./app/javascript/app.vue
+ @ ./app/javascript/packs/hello_vue.js
+
+Building with Vite ⚡️
+vite v4.5.0 building for development...
+
+transforming...
+
+✓ 10 modules transformed.
+
+rendering chunks...
+
+computing gzip size...
+
+../../public/vite-dev/manifest-assets.json              0.00 kB │ gzip:  0.02 kB
+
+../../public/vite-dev/manifest.json                     0.34 kB │ gzip:  0.15 kB
+
+../../public/vite-dev/assets/application-4c1997df.css   0.05 kB │ gzip:  0.07 kB
+
+../../public/vite-dev/assets/application-be005bbc.js   49.71 kB │ gzip: 20.20 kB
+
+✓ built in 1.46s
+
+Build with Vite complete: /app/public/vite-dev
+  Rendered layout layouts/application.html.erb (Duration: 6980.4ms | Allocations: 24419)
+Completed 200 OK in 6986ms (Views: 6983.5ms | ActiveRecord: 0.0ms | Allocations: 26616)
+
+
+  [1m[35m (399.8ms)[0m  [1m[35mCREATE DATABASE "as_net_development" ENCODING = 'unicode'[0m
+  [1m[35m (352.4ms)[0m  [1m[35mCREATE DATABASE "as_net_test" ENCODING = 'unicode'[0m

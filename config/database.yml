@@ -20,23 +20,23 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: career_workout_db
+  host: as_net_db
   username: postgres
   password: password
 
 
 development:
   <<: *default
-  database: career_workout_development
+  database: as_net_development
 
 develop:
   <<: *default
-  database: career_workout_develop
+  database: as_net_develop
   url: <%= ENV['DATABASE_URL'] %>
 
 stage:
   <<: *default
-  database: career_workout_stage
+  database: as_net_stage
   url: <%= ENV['DATABASE_URL'] %>
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -70,7 +70,7 @@ stage:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: career_workout_test
+  database: as_net_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -94,7 +94,7 @@ test:
 #
 production:
   <<: *default
-  database: career_workout_production
+  database: as_net_production
   username: <%= ENV['CAREER_WORKOUT_DATABASE_USERNAME'] %>
   password: <%= ENV['CAREER_WORKOUT_DATABASE_PASSWORD'] %>
   url: <%= ENV['DATABASE_URL'] %>

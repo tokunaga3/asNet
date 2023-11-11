@@ -1,7 +1,7 @@
 version: "3"
 services:
   db:
-    container_name: career_workout_db
+    container_name: as_net_db
     image: postgres:13.3
     ports:
       - "5432:5432"
@@ -12,7 +12,7 @@ services:
       POSTGRES_PASSWORD: password
       TZ: "Asia/Tokyo"
   web:
-    container_name: career_workout_web
+    container_name: as_net_web
     build: .
     entrypoint: ["/bin/sh", "-c"]
     environment:
