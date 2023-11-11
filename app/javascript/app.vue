@@ -1,17 +1,20 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
-  </div>
+  <p>{{ state.message }}</p>
 </template>
 
-<script>
-export default {
-  data: function () {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'App',
+  setup() {
     return {
-      message: "Hello Vue!"
+      state: {
+        message: "Hello Vue3 + TypeScript!"
+      }
     }
   }
-}
+})
 </script>
 
 <style scoped>
