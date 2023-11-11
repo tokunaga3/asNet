@@ -33,13 +33,12 @@ COPY . /app
 
 # COPY entrypoint.sh /usr/bin
 
-# RUN chmod +x bin/render-build.sh
 
-#RUN chmod +x /usr/bin/entrypoint.sh
+RUN chmod +x /usr/bin/entrypoint.sh
 #ENTRYPOINT ["entrypoint.sh"]
 
-# RUN bundle exec rake assets:precompile
-# RUN bundle exec rake assets:clean
+RUN bundle exec rake assets:precompile
+RUN bundle exec rake assets:clean
 
 # タイムゾーン変更
 RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
