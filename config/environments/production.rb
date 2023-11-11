@@ -71,7 +71,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :ses
 
-  host = 'as-net-dnc0.onrender.com'
+  config.host = 'as-net-dnc0.onrender.com'
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
