@@ -95,6 +95,4 @@ test:
 production:
   <<: *default
   database: as_net_db
-  username: <%= ENV['POSTGRES_USER'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
   url: <%= ENV['DATABASE_URL'] %>
