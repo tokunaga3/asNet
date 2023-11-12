@@ -94,7 +94,7 @@ test:
 #
 production:
   <<: *default
-  database: as_net_production
-  username: <%= ENV['CAREER_WORKOUT_DATABASE_USERNAME'] %>
-  password: <%= ENV['CAREER_WORKOUT_DATABASE_PASSWORD'] %>
+  database: as_net_db
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   url: <%= ENV['DATABASE_URL'] %>
