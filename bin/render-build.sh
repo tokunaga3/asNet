@@ -7,7 +7,6 @@ rm -f tmp/pids/server.pid
 tail -f /dev/null
 # cron
 # bundle exec whenever --update-crontab
-bundle exec rake  db:create
 bundle exec rake  db:migrate
 # bundle exec rake db:seed
 bundle exec puma -C config/puma.rb
