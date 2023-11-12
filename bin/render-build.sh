@@ -2,6 +2,7 @@
 # exit on error
 set -o errexit
 
+mkdir -p ./tmp/sockets
 # cron
 # bundle exec whenever --update-crontab
 bundle exec rake  db:migrate
