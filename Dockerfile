@@ -35,7 +35,7 @@ COPY . /app
 
 RUN chmod +x bin/render-build.sh
 
-RUN cmkdir -p ./tmp/sockets
+RUN mkdir -p ./tmp/sockets
 #ENTRYPOINT ["entrypoint.sh"]
 
 # RUN bundle exec rake assets:precompile
