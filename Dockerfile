@@ -40,6 +40,6 @@ RUN mkdir -p ./tmp/sockets
 
 # RUN bundle exec rake assets:precompile
 # RUN bundle exec rake assets:clean
-
+ENV RAILS_ENV "production"
 # タイムゾーン変更
 RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
