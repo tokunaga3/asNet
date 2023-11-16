@@ -27,6 +27,8 @@ WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 RUN bundle install
+RUN npm install
+
 
 # アプリケーションのコピー
 COPY . /app
