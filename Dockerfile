@@ -27,13 +27,13 @@ WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 RUN bundle install
-RUN npm install
 
 
 # アプリケーションのコピー
 COPY . /app
 
 # COPY entrypoint.sh /usr/bin
+RUN npm install
 
 RUN chmod +x bin/render-build.sh
 
