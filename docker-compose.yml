@@ -18,6 +18,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
+      RAILS_ENV: development
     command:
       - |
         bundle install
